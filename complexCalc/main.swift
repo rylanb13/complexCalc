@@ -3,6 +3,7 @@
 //  main.swift
 //  complexCalc
 //
+// This program creates a calculator that does basic operations and operations using multiple numbers
 
 
 import Foundation
