@@ -23,6 +23,14 @@ func divide(firstNum: Int, secondNum: Int) -> Int {
     return firstNum / secondNum
 }
 
+func mathOp(op: (Int, Int) -> Int, firstNum: Int, secondNum: Int) -> Int {
+    return op(firstNum, secondNum)
+}
+
+func arrayOp(op: ([Int]) -> Int, numbers: [Int]) -> Int {
+    return op(numbers)
+}
+
 func addArray(numbers: [Int]) -> Int {
     var sum = 0
     for var index = 0; index < numbers.count; ++index {
@@ -42,3 +50,5 @@ func multArray(numbers: [Int]) -> Int {
 func countArray(numbers: [Int]) -> Int {
     return numbers.count
 }
+
+
