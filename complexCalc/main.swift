@@ -60,27 +60,29 @@ func arrayOp(op: ([Int]) -> Int, numbers: [Int]) -> Int {
     return op(numbers)
 }
 
-println(add(10, 10))
-println(subtract(10, 5))
-println(multiply(10, 5))
-println(divide(10, 5))
-println(arrayOp(multArray, [1,2,3,4,5]))
-
 func addTuples(firstTup: (Int, Int), secondTup: (Int, Int)) -> (Int, Int) {
-    var totalFirst = firstTup.0 + secondTup.0
-    var totalSecond = firstTup.1 + secondTup.1
+    let totalFirst = firstTup.0 + secondTup.0
+    let totalSecond = firstTup.1 + secondTup.1
     return (totalFirst, totalSecond)
 }
 
 func subtractTuples(firstTup: (Int, Int), secondTup: (Int, Int)) -> (Int, Int) {
-    var totalFirst = firstTup.0 - secondTup.0
-    var totalSecond = firstTup.1 - secondTup.1
+    let totalFirst = firstTup.0 - secondTup.0
+    let totalSecond = firstTup.1 - secondTup.1
     return (totalFirst, totalSecond)
 }
 
-println(addTuples((1,0), (2,3)));
-println(subtractTuples((1,0), (2,3)));
-
+print(add(10, secondNum: 10))
+print(subtract(10, secondNum: 5))
+print(multiply(10, secondNum: 5))
+print(divide(10, secondNum: 5))
+print(mathOp(add, firstNum: 10, secondNum: 10))
+print(addArray([1,2,3,4,5]))
+print(multArray([1,2,3,4,5]))
+print(avgArray([1,2,3,4,5]))
+print(arrayOp(multArray, numbers: [1,2,3,4,5]))
+print(addTuples((1,0), secondTup: (2,3)));
+print(subtractTuples((1,0), secondTup: (2,3)));
 
 
 
