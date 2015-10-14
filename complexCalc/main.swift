@@ -72,6 +72,7 @@ func subtractTuples(firstTup: (Int, Int), secondTup: (Int, Int)) -> (Int, Int) {
     return (totalFirst, totalSecond)
 }
 
+// tests for each function
 print(add(10, secondNum: 10))
 print(subtract(10, secondNum: 5))
 print(multiply(10, secondNum: 5))
